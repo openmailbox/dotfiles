@@ -10,4 +10,6 @@
 
 # Macros
 /def upload=/quote -0 !unformat.pl %*
-/def changag=/limit ^([^\[]|\[Wizards\]).+$ 
+/def changag=/limit -v ^\\[[^(Wizards)].+\].+$
+
+
