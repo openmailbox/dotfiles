@@ -1,0 +1,13 @@
+# Global variables 
+/set matching=regexp
+/set kecho=on
+/set kprefix=> 
+/set kecho_attr=Cyellow,h
+
+# World definitions
+/addworld wcnh wcmush.com 2199
+/addworld firan legendary.org 5000
+
+# Macros
+/def upload=/quote -0 !unformat.pl %*
+/def changag=/limit ^([^\[]|\[Wizards\]).+$ 
