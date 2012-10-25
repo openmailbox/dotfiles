@@ -1,15 +1,34 @@
-# Global variables 
-/set matching=regexp
+; Global variables 
 /set kecho=on
 /set kprefix=> 
-/set kecho_attr=Cyellow,h
+/set kecho_attr=Cred,h
 
-# World definitions
-/addworld wcnh wcmush.com 2199
-/addworld firan legendary.org 5000
+; World definitions
+/addworld -Ttiny.mush wcnh wcmush.com 2199
+/addworld -Ttiny.mush firan legendary.org 5000
 
-# Macros
+; Macros
 /def upload=/quote -0 !unformat.pl %*
-/def changag=/limit -v ^\\[[^(Wizards)].+\].+$
+/def -wfiran spawn=/limit -mregexp -v ^\\[[^(Wizards)|^(N\\-)].+\].+$
+
+; Pages and whispers
+/def -i -p2 -aBCyellow -t'* pages[,:] *' hl_page1
+/def -i -p4 -aBCyellow -t'From afar, *' hl_page3
+/def -i -p2 -aBCyellow -t'Long distance to *' hl_page4
+/def -i -p2 -aBCyellow -t'You paged *' hl_page5
+/def -i -p3 -aBCyellow -t'* pages (*) *' hl_mpage1
+/def -i -p6 -aBCyellow -t'(To: *)' hl_mpage4
+/def -i -p4 -aBCyellow -t'(To: *) Long Distance, *' hl_mpage5
+/def -i -p5 -aBCyellow -t'(To: *) * pages: *' hl_mpage6
+/def -i -p2 -aBCcyan -t'* whispers[,:] *' hl_whisper1
+/def -i -p3 -aBCcyan -t'You sense *' hl_whisper2
+
+; dbrefs and flags
+/def -T(tiny\.mush(\..*)?) -i -p1 -P0Cgreen -mregexp -F -t'#[0-9]+' tiny_dbrefnum
+/def -T(tiny\.mush(\..*)?) -i -p1 -P0BCred -mregexp -F -t'#-1' tiny_dbreferr
+/def -T(tiny\.mush(\..*)?) -i -p1 -P1BCgreen -mregexp -F -t'#[0-9]+([A-Za-z\$+&@]+( \[[^]]+\])?)' tiny_dbrefflag
+
+; examine attribs
+/def -T(tiny\.mush(\..*)?) -i -p1 -P1Cwhite -mregexp -F -t'^([ ]*[^;()# ]+)(\\(#[0-9]+\\))?:.*' tiny_heads
 
 
