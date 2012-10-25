@@ -9,7 +9,10 @@
 
 ; Macros
 /def upload=/quote -0 !unformat.pl %*
+
+; Firan chan stuff
 /def -wfiran spawn=/limit -mregexp -v ^\\[[^(Wizards)|^(N\\-)].+\].+$
+/def -wfiran -i -p2 -ahBCred -mregexp -t'^\[Wizards\]' hl_firan_chat_wiz
 
 ; Pages and whispers
 /def -i -p2 -aBCyellow -t'* pages[,:] *' hl_page1
