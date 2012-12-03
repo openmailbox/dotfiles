@@ -6,6 +6,7 @@ syntax enable
 set background=dark
 colorscheme solarized 
 set nocompatible
+call togglebg#map("<F5>") 
 
 " Command-line completion
 set wildmenu
@@ -43,4 +44,14 @@ set smartcase
 " don't make ~ files
 set nobackup 
 
+" Yank text to the OS X clipboard
+noremap <leader>y "*y
+noremap <leader>yy "*Y
 
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
+
+" NERD Tree remap
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
+let g:Powerline_symbols = 'fancy'
