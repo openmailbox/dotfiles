@@ -4,6 +4,8 @@ filetype plugin indent on
 " Cosmetics; YMMV.
 syntax enable
 set background=dark
+set t_Co=256
+let g:solarized_termcolors=16
 colorscheme solarized 
 set nocompatible
 call togglebg#map("<F5>") 
