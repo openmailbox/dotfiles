@@ -59,3 +59,10 @@ export CLICOLOR=1
 # f = magenta g = cyan, h = light gray, x = default
 # lowercase is bold
 export LSCOLORS=exgxxxxxcx
+
+export TERM=xterm-256color
+
+# For dircolors
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
