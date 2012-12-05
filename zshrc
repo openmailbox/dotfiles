@@ -41,6 +41,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:/opt/vagrant/bin # Vagrant 
 source ~/.rvm/scripts/rvm
 
 export EDITOR="vim"

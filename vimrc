@@ -1,5 +1,6 @@
 call pathogen#infect()
 filetype plugin indent on
+set ofu=syntaxcomplete#Complete
 
 " Cosmetics; YMMV.
 syntax enable
