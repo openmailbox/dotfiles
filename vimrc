@@ -6,6 +6,7 @@ syntax enable
 set background=dark
 set t_Co=256
 let g:solarized_termcolors=16
+let g:solarized_termtrans=1
 colorscheme solarized 
 set nocompatible
 call togglebg#map("<F5>") 
