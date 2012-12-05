@@ -55,3 +55,5 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 let g:Powerline_symbols = 'fancy'
+
+let g:slime_target = "tmux"
