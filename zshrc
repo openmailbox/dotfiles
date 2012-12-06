@@ -1,6 +1,21 @@
 alias tmux="TERM=screen-256color-bce tmux"
 
-# Path to your oh-my-zsh configuration.
+export EDITOR="vim"
+bindkey -v
+
+# Key bindings
+bindkey "\eOH" beginning-of-line
+bindkey "\eOF" end-of-line
+bindkey "\eOC" forward-word
+bindkey "\eOD" backward-word
+
+# vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
+
+#Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -44,15 +59,6 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:/opt/vagrant/bin # Vagrant 
 source ~/.rvm/scripts/rvm
 
-export EDITOR="vim"
-bindkey -v 
-
-# vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward 
-
 # make ls display colors, reinforce with CLICOLOR and LSCOLORS
 export CLICOLOR=1
  
@@ -69,3 +75,4 @@ export TERM=xterm-256color
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
+
