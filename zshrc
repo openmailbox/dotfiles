@@ -3,18 +3,6 @@ alias tmux="TERM=screen-256color-bce tmux"
 export EDITOR="vim"
 bindkey -v
 
-# Key bindings
-bindkey "\eOH" beginning-of-line
-bindkey "\eOF" end-of-line
-bindkey "\eOC" forward-word
-bindkey "\eOD" backward-word
-
-# vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
-
 #Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -23,6 +11,24 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="triumverate"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# Key bindings
+bindkey "^[[1;5D" backward-word 
+bindkey "^[OD" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[OC" forward-word
+
+# vi style incremental search
+bindkey '^R' history-incremental-search-backward
+bindkey '^S' history-incremental-search-forward
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -45,13 +51,6 @@ export UPDATE_ZSH_DAYS=13
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:
