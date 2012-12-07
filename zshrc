@@ -23,6 +23,8 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[OD" backward-word
 bindkey "^[[1;5C" forward-word
 bindkey "^[OC" forward-word
+bindkey "^[OF" end-of-line
+bindkey "^[OH" beginning-of-line
 
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
