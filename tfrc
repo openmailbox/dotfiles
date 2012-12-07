@@ -2,6 +2,7 @@
 /set kecho=on
 /set kprefix=> 
 /set kecho_attr=Cred
+/set warn_5keys=off
 
 ; World definitions
 /addworld -Ttiny.mush wcnh wcmush.com 2199
@@ -27,11 +28,11 @@
 /def -i -p3 -aBCcyan -t'You sense *' hl_whisper2
 
 ; dbrefs and flags
-/def -T(tiny\.mush(\..*)?) -i -p1 -P0Cgreen -mregexp -F -t'#[0-9]+' tiny_dbrefnum
-/def -T(tiny\.mush(\..*)?) -i -p1 -P0BCred -mregexp -F -t'#-1' tiny_dbreferr
-/def -T(tiny\.mush(\..*)?) -i -p1 -P1BCgreen -mregexp -F -t'#[0-9]+([A-Za-z\$+&@]+( \[[^]]+\])?)' tiny_dbrefflag
+;/def -T(tiny\.mush(\..*)?) -i -p1 -P0Cgreen -mregexp -F -t'#[0-9]+' tiny_dbrefnum
+;/def -T(tiny\.mush(\..*)?) -i -p1 -P0BCred -mregexp -F -t'#-1' tiny_dbreferr
+;/def -T(tiny\.mush(\..*)?) -i -p1 -P1BCgreen -mregexp -F -t'#[0-9]+([A-Za-z\$+&@]+( \[[^]]+\])?)' tiny_dbrefflag
 
 ; examine attribs
-/def -T(tiny\.mush(\..*)?) -i -p1 -P1Cwhite -mregexp -F -t'^([ ]*[^;()# ]+)(\\(#[0-9]+\\))?:.*' tiny_heads
+;/def -T(tiny\.mush(\..*)?) -i -p1 -P1Cwhite -mregexp -F -t'^([ ]*[^;()# ]+)(\\(#[0-9]+\\))?:.*' tiny_heads
 
 
