@@ -60,14 +60,6 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export PATH=$PATH:/opt/vagrant/bin # Vagrant 
 source ~/.rvm/scripts/rvm
 
-# Pentaho
-export PENTAHO_JAVA_HOME=/usr/lib/jvm/java-7-orcale
-
-# Apache Ant
-export PATH=$PATH:/var/lib/apache-ant/apache-ant-1.8.4/bin/
-export ANT_HOME=/var/lib/apache-ant/apache-ant-1.8.4
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-
 # make ls display colors, reinforce with CLICOLOR and LSCOLORS
 export CLICOLOR=1
  
