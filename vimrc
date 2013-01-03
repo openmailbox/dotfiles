@@ -11,6 +11,7 @@ let g:solarized_termtrans=1
 colorscheme solarized 
 set nocompatible
 call togglebg#map("<F5>") 
+au BufNewFile,BufRead *.pp set filetype=ruby
 
 " Command-line completion
 set wildmenu
