@@ -1,0 +1,12 @@
+# ~/.tmuxinator/localhost.yml
+# you can make as many tabs as you wish...
+
+project_name: localhost
+project_root: ~/
+rvm: default@global
+tabs:
+  - main:
+      layout: even-vertical
+      panes: 
+        - #empty
+        - sudo apt-get update && sudo apt-get upgrade
