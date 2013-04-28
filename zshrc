@@ -57,7 +57,7 @@ export UPDATE_ZSH_DAYS=13
 # Customize to your needs...
 export CVSEDITOR=vim
 export CVSROOT=brandon@legendary.org:/usr/local/cvsroot
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin: # $PATH
 export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 export PATH=$PATH:/opt/vagrant/bin # Vagrant 
 source ~/.rvm/scripts/rvm
