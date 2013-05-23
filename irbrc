@@ -13,5 +13,6 @@ end
 # Use Pry everywhere
 require "rubygems"
 require 'pry'
+require 'awesome_print'
 Pry.start
 exit
