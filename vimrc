@@ -11,6 +11,8 @@ let g:solarized_termtrans=1
 colorscheme solarized 
 set nocompatible
 call togglebg#map("<F5>") 
+let g:airline_powerline_fonts=1
+let g:airline_theme='laederon'
 
 " Command-line completion
 set wildmenu
@@ -57,7 +59,5 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
 " NERD Tree remap
 nmap <silent> <c-n> :NERDTreeToggle<CR>
-
-let g:Powerline_symbols = 'fancy'
 
 let g:slime_target = "tmux"
