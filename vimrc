@@ -60,4 +60,3 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 " NERD Tree remap
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
-let g:slime_target = "tmux"
