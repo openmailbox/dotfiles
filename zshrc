@@ -19,18 +19,20 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Key bindings
-bindkey "^[[1;5D" backward-word 
-bindkey "^[OD" backward-word
-bindkey "^[[1;5C" forward-word
-bindkey "^[OC" forward-word
-bindkey "^[OF" end-of-line
-bindkey "^[OH" beginning-of-line
+#bindkey "^[[1;5D" backward-word 
+#bindkey "^[OD" backward-word
+#bindkey "^[[1;5C" forward-word
+#bindkey "^[OC" forward-word
+#bindkey "^[OF" end-of-line
+#bindkey "^[OH" beginning-of-line
+#bindkey "^[[C" forward-char
+#bindkey "^[[D" backward-char
 
 # vi style incremental search
-bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
-bindkey '^P' history-search-backward
-bindkey '^N' history-search-forward
+#bindkey '^R' history-incremental-search-backward
+#bindkey '^S' history-incremental-search-forward
+#bindkey '^P' history-search-backward
+#bindkey '^N' history-search-forward
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

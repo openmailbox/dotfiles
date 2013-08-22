@@ -3,8 +3,8 @@
 
 project_name: localhost
 project_root: ~/
-rvm: default@global
-tabs:
+pre-window: rvm use default@global
+windows:
   - main:
       layout: even-vertical
       panes: 
