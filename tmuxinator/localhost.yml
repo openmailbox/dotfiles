@@ -10,3 +10,4 @@ windows:
       panes: 
         - #empty
         - sudo apt-get update && sudo apt-get -y upgrade
+  - davos: ssh brandon@blrice.net

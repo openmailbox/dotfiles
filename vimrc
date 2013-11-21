@@ -1,6 +1,5 @@
-call pathogen#infect()
+execute pathogen#infect()
 filetype plugin indent on
-set ofu=syntaxcomplete#Complete
 
 " Cosmetics; YMMV.
 syntax enable
@@ -13,6 +12,7 @@ set nocompatible
 call togglebg#map("<F5>") 
 let g:airline_powerline_fonts=1
 let g:airline_theme='laederon'
+let g:ycm_extra_conf_globlist = ['~/*']
 
 " Command-line completion
 set wildmenu
