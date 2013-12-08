@@ -1,5 +1,5 @@
 alias tmux="TERM=screen-256color-bce tmux"
-alias vim="mvim -v"
+#alias vim="mvim -v"
 alias be="bundle exec"
 
 export EDITOR="vim"
