@@ -1,4 +1,6 @@
 alias tmux="TERM=screen-256color-bce tmux"
+#alias vim="mvim -v"
+alias be="bundle exec"
 
 export EDITOR="vim"
 bindkey -v
@@ -61,7 +63,7 @@ export UPDATE_ZSH_DAYS=13
 # Customize to your needs...
 export CVSEDITOR=vim
 export CVSROOT=brandon@legendary.org:/usr/local/cvsroot
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin: # $PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin: # $PATH
 export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 export PATH=$PATH:/opt/vagrant/bin # Vagrant 
 source ~/.rvm/scripts/rvm
@@ -83,3 +85,6 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
