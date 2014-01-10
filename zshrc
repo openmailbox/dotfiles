@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
+alias rspec="nocorrect rspec"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
