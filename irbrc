@@ -10,6 +10,16 @@ if defined?(::Bundler)
   end
 end
 
+IRB.conf[:PROMPT][:CUSTOM] = {
+  :PROMPT_I => "\e[0;33m%N(%m):%03n: > \e[m ",
+  :PROMPT_S => "\e[0;33m%N(%m):%03n:%l>>\e[m ",
+  :PROMPT_C => "\e[0;33m%N(%m):%03n:..\e[m ",
+  :PROMPT_N => "\e[0;33m%N(%m):%03n:..\e[m ",
+  :RETURN   => "\e[1;31m=>\e[m %s\n"
+}
+IRB.conf[:PROMPT_MODE] = :CUSTOM
+IRB.conf[:AUTO_INDENT] = true
+
 # Use Pry everywhere
 require "rubygems"
 require 'pry'

@@ -64,9 +64,13 @@ export UPDATE_ZSH_DAYS=13
 export CVSEDITOR=vim
 export CVSROOT=brandon@legendary.org:/usr/local/cvsroot
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin: # $PATH
-export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 export PATH=$PATH:/opt/vagrant/bin # Vagrant 
-source ~/.rvm/scripts/rvm
+
+# Ruboto stuff
+export ANDROID_HOME=/home/brandon/Documents/Code/Java/android-sdk-linux
+export PATH=$PATH:/home/brandon/Documents/Code/Java/android-sdk-linux/tools
+export PATH=$PATH:/home/brandon/Documents/Code/Java/android-sdk-linux/platform-tools
+export PATH=$PATH:/home/brandon/Documents/Code/Java/android-sdk-linux/build-tools/19.0.1
 
 # make ls display colors, reinforce with CLICOLOR and LSCOLORS
 export CLICOLOR=1
@@ -85,4 +89,8 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
+export KETTLE_PATH=/home/brandon/kettle/data-integration
+export KETTLE_HOME=/home/brandon
 
+export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+source ~/.rvm/scripts/rvm

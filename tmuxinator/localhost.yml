@@ -5,8 +5,8 @@ project_name: localhost
 project_root: ~/
 pre-window: rvm use default@global
 windows:
+  - davos: ssh brandon@davos.blrice.net
   - main:
       layout: even-vertical
       panes: 
         - #empty
-  - davos: ssh brandon@davos.blrice.net
