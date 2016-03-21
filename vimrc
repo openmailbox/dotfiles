@@ -3,6 +3,8 @@ filetype plugin indent on
 
 " Cosmetics; YMMV.
 syntax enable
+set hlsearch
+set laststatus=2
 set background=dark
 set t_Co=256
 let g:solarized_termcolors=16
@@ -12,8 +14,20 @@ set nocompatible
 call togglebg#map("<F5>") 
 let g:airline_powerline_fonts=1
 let g:airline_theme='laederon'
+let g:ycm_global_ycm_extra_conf = '/home/brandon/.ycm_extra_conf.py'
 let g:ycm_extra_conf_globlist = ['~/*']
 let g:ycm_collect_identifiers_from_tag_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Allow JSX highlighting in .js files for React
+let g:jsx_ext_required = 0
+
+" show trailing whitespace
+match ErrorMsg '\s\+$'
+" strip trailing whitespace
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " Command-line completion
 set wildmenu
@@ -148,3 +162,5 @@ func! WordProcessorMode()
   setlocal linebreak 
 endfu 
 com! WP call WordProcessorMode()
+
+let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'

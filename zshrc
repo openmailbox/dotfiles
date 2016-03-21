@@ -20,25 +20,7 @@ ZSH_THEME="triumverate"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Key bindings
-#bindkey "^[[1;5D" backward-word 
-#bindkey "^[OD" backward-word
-#bindkey "^[[1;5C" forward-word
-#bindkey "^[OC" forward-word
-#bindkey "^[OF" end-of-line
-#bindkey "^[OH" beginning-of-line
-#bindkey "^[[C" forward-char
-#bindkey "^[[D" backward-char
-
-# vi style incremental search
-#bindkey '^R' history-incremental-search-backward
-#bindkey '^S' history-incremental-search-forward
-#bindkey '^P' history-search-backward
-#bindkey '^N' history-search-forward
-
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
 alias rspec="nocorrect rspec"
 
@@ -62,9 +44,9 @@ export UPDATE_ZSH_DAYS=13
 
 # Customize to your needs...
 export CVSEDITOR=vim
-export CVSROOT=brandon@legendary.org:/usr/local/cvsroot
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin: # $PATH
-export PATH=$PATH:/opt/vagrant/bin # Vagrant 
+#export CVSROOT=brandon@legendary.org:/usr/local/cvsroot
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin # $PATH
 
 # Ruboto stuff
 export ANDROID_HOME=/home/brandon/Documents/Code/Java/android-sdk-linux
@@ -92,5 +74,22 @@ fi
 export KETTLE_PATH=/home/brandon/kettle/data-integration
 export KETTLE_HOME=/home/brandon
 
+export PATH=$PATH:/home/brandon/dart-sdk/bin
 export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+
 source ~/.rvm/scripts/rvm
+source ~/optoro_env.bash
+
+# added by travis gem
+[ -f /home/brandon/.travis/travis.sh ] && source /home/brandon/.travis/travis.sh
+
+# solves berkshelf timeout errors
+export SOLVE_TIMEOUT=600
+
+export NVM_DIR="/home/brandon/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="/home/brandon/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
