@@ -74,10 +74,6 @@ fi
 export KETTLE_PATH=/home/brandon/kettle/data-integration
 export KETTLE_HOME=/home/brandon
 
-export PATH=$PATH:/home/brandon/dart-sdk/bin
-export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-
-source ~/.rvm/scripts/rvm
 source ~/optoro_env.bash
 
 # added by travis gem
@@ -93,3 +89,17 @@ export PATH="/home/brandon/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/Documents/code/go
+export PATH=$PATH:/$GOPATH/bin
+
+# Docker stuff
+export COMPOSE_HTTP_TIMEOUT=500
+
+export PATH=$PATH:/home/brandon/dart-sdk/bin
+export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
+
+source ~/.rvm/scripts/rvm
+
+alias serve="ruby -run -e httpd . -p 8080"
