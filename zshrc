@@ -75,7 +75,6 @@ export KETTLE_PATH=/home/brandon/kettle/data-integration
 export KETTLE_HOME=/home/brandon
 
 export PATH=$PATH:/home/brandon/dart-sdk/bin
-export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 source ~/.rvm/scripts/rvm
 source ~/optoro_env.bash
@@ -93,3 +92,9 @@ export PATH="/home/brandon/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/Documents/code/go
+export PATH=$PATH:$GOPATH/bin
+
+export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
