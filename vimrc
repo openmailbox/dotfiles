@@ -44,6 +44,9 @@ set expandtab
 set tabstop=2
 autocmd Filetype go setlocal ts=4 sts=4 sw=4
 
+autocmd Filetype c,go setlocal ts=4 sts=4 sw=4
+autocmd Filetype make setlocal noexpandtab ts=4 sw=4
+
 " Numbers on left
 set number
 
