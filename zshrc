@@ -56,7 +56,7 @@ export PATH=$PATH:/home/brandon/Documents/Code/Java/android-sdk-linux/build-tool
 
 # make ls display colors, reinforce with CLICOLOR and LSCOLORS
 export CLICOLOR=1
- 
+
 # LSCOLORS order: DIR, SYM_LINK, SOCKET, PIPE, EXE, BLOCK_SP
 # CHAR_SP, EXE_SUID, EXE_GUID, DIR_STICKY, DIR_WO_STICKY
 # a = black, b = red, c = green, d = brown, e = blue,
@@ -97,7 +97,10 @@ export PATH=$PATH:/$GOPATH/bin
 # Docker stuff
 export COMPOSE_HTTP_TIMEOUT=500
 
+# Dart
 export PATH=$PATH:/home/brandon/dart-sdk/bin
+
+# RVM
 export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 
 source ~/.rvm/scripts/rvm
