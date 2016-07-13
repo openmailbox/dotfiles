@@ -20,6 +20,7 @@ let g:ycm_collect_identifiers_from_tag_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_always_populate_location_list = 1
 
 " Allow JSX highlighting in .js files for React
 let g:jsx_ext_required = 0
@@ -28,6 +29,10 @@ let g:jsx_ext_required = 0
 match ErrorMsg '\s\+$'
 " strip trailing whitespace
 nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
+" YCM mappings
+nnoremap <leader>ycmgt :YcmCompleter GetType<CR>
+nnoremap <leader>ycmgo :YcmCompleter GoTo<CR>
 
 " Command-line completion
 set wildmenu
