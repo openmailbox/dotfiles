@@ -100,16 +100,10 @@ export COMPOSE_HTTP_TIMEOUT=500
 # Dart
 export PATH=$PATH:/home/brandon/dart-sdk/bin
 
-
 alias serve="ruby -run -e httpd . -p 8081"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-
-
 export ANDROID_HOME="/home/brandon/Documents/code/java/android-sdk-linux"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# RVM
-export PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
-source ~/.rvm/scripts/rvm
